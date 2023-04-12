@@ -32,7 +32,7 @@ public class AirportTest {
     @Test
     public void canBookPassenger(){
         airport.bookPassenger(flight, passenger);
-        assertThat(airport.checkPassengerBooked()).isEqualTo(true);
+        assertThat(airport.checkPassengerBooked(flight, passenger)).isEqualTo(true);
 
     }
 
