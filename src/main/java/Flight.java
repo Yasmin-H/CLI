@@ -31,7 +31,9 @@ public class Flight {
         return this.passengers.size();
     }
 
-
+    public boolean checkPassenger(Passenger passenger){
+        return this.passengers.contains(passenger);
+    }
 
 
 }

@@ -26,13 +26,13 @@ public class AirportTest {
 
     @Test
     public void canDisplayFlights(){
-        assertThat(airport.displayFlights()).isEqualTo("BA113 to Jamaica");
+        assertThat(airport.displayFlights()).isEqualTo("BA113 to Jamaica,");
     }
 
     @Test
     public void canBookPassenger(){
         airport.bookPassenger(flight, passenger);
-        assertThat(airport.checkPassengerBooked(flight, passenger)).isEqualTo(true);
+        assertThat(flight.checkPassenger(passenger)).isEqualTo(true);
 
     }
 

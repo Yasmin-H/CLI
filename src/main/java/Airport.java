@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Airport {
 
     private String name;
-    private ArrayList<Flight> flights;
+    public ArrayList<Flight> flights;
 
 
     public Airport(String name){
@@ -37,11 +37,7 @@ public class Airport {
         flight.addPassenger(passenger);
     }
 
-    public boolean checkPassengerBooked(Flight flight , Passenger passenger){
-        if (flight[passenger] >= 0){
 
-        }
-    }
 
 
 
