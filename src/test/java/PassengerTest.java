@@ -9,7 +9,7 @@ public class PassengerTest {
 
     @BeforeEach
     public void setUp(){
-        passenger = new Passenger("John Doe", "07813657389", "id1");
+        passenger = new Passenger("John Doe", "id1", "07813657389");
 
     }
 
