@@ -22,7 +22,7 @@ public class Airport {
     public String displayFlights() {
         String flightsDisplay = "";
         for (Flight flight : this.flights) {
-            flightsDisplay += flight.getId() + " to " + flight.getDestination() + ",";
+            flightsDisplay += flight.getId() + " to " + flight.getDestination() + ", ";
         }
 
         return flightsDisplay;
